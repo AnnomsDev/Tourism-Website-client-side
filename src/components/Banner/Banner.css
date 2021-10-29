@@ -1,0 +1,27 @@
+.banner{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://i.ibb.co/Tgh5G82/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 40vw;
+    padding: 9vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+}
+.banner h1{
+    font-size: calc(1em + 3vw);
+    color: white;
+    text-transform:uppercase;
+}
+.banner h1 span{
+    color: rgb(240, 165, 66)
+}
+.banner p{
+    padding-right: 40%;
+}
+.banner button{
+    margin-top: 2em;
+    width: 9em;
+}
+
