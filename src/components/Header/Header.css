@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+    align-items: center;
+    padding: 1em 9vw;
+}
+.header .logo{
+    margin-right: auto;
+}
+.header a{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+.header nav *{
+    margin-left: 1em;
+}
+.btn-primary{
+    border: none;
+    padding: .7em 1.7em;
+    background: linear-gradient(90deg, #e06615,   #f5ac7c) ;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+}
