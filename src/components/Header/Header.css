@@ -22,3 +22,11 @@
     font-weight: 700;
     border-radius: 5px;
 }
+.btn-secondery{
+    border: none;
+    padding: .7em 1.7em;
+    border: 1px solid black;
+    background: none;
+    font-weight: 700;
+    border-radius: 5px;
+}

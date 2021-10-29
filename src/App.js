@@ -2,6 +2,8 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
+import SignIn from './components/SignIn/SignIn';
+import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 
 function App() {
   return (
@@ -11,6 +13,12 @@ function App() {
         <Switch>
           <Route exact path='/'>
             <Home />
+          </Route>
+          <Route path="/signin">
+            <SignIn />
+          </Route>
+          <Route path='/service-details/:id'>
+            <ServiceDetails />
           </Route>
         </Switch>
       </Router>

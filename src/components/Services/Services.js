@@ -1,0 +1,35 @@
+import './Services.css'
+import React, { useEffect, useState } from 'react';
+import Service from '../Service/Service';
+const axios = require('axios').default;
+
+const Services = () => {
+    const [services, setServices] = useState([])
+
+    useEffect(() => {
+        axios.get('http://localhost:5000/services')
+            .then(services => {
+                setServices(services.data)
+                console.log(services.data) //test
+            })
+
+    }, [])
+
+
+
+
+    return (
+        <div className='services'>
+            <h1>This is services</h1>
+            <div className="containner">
+                {
+                    services.map(service => <Service {...service} />)
+                }
+            </div>
+
+
+        </div>
+    );
+};
+
+export default Services;
