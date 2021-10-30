@@ -15,7 +15,7 @@ const ServiceDetails = () => {
             {/* <img src={service.img} alt="" /> */}
             <h2>{service.name}</h2>
             <p>{service.des}</p>
-            <button>Book</button>
+            <button className='btn-secondery' >Book</button>
         </div>
     );
 };

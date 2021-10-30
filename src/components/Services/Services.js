@@ -23,7 +23,7 @@ const Services = () => {
             <h1>FIND <span className="heighlite">POPULAR</span><br /> DESTINATON</h1>
             <div className="containner">
                 {
-                    services.map(service => <Service {...service} />)
+                    services.map(service => <Service key={service._id} {...service} />)
                 }
             </div>
 

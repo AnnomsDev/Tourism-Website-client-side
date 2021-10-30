@@ -14,12 +14,12 @@ const Header = () => {
             <nav>
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='/about-us'>About Us</NavLink>
-                <NavLink to='/community'>Community</NavLink>
                 {
                     !user.uid ?
                         <Link to='/signin'><button className="btn-primary">Sign In</button></Link>
                         :
                         <>
+                            <NavLink to='/my-bookings'>My Bookings</NavLink>
                             <button onClick={logOut} className="btn-secondery">Logout</button>
                             <span className="user">{user.displayName}</span>
                         </>

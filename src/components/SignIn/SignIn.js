@@ -1,3 +1,4 @@
+import './SignIn.css'
 import React from 'react';
 import { useHistory, useLocation } from 'react-router';
 import useFirebase from '../../Hooks/useFirebase';
@@ -27,9 +28,21 @@ const SignIn = () => {
 
 
     return (
-        <div>
-            <button onClick={handleGoogleSignIn} > Sign in with gogogle</button>
-            <button onClick={() => console.log(redirectURI)}> TESt </button>
+        <div className='sign-in'>
+            <div className="sign-in-containner">
+                <h2>Get Started</h2>
+                <button onClick={handleGoogleSignIn}>
+                    <img height='30px' src="./img/google.svg" alt="" />
+                    <p>Continue in with gogogle</p>
+                </button>
+
+
+            </div>
+
+
+
+
+
         </div>
     );
 };
