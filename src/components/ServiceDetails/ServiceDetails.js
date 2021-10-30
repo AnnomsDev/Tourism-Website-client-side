@@ -18,11 +18,13 @@ const ServiceDetails = () => {
         const email = user.email;
         const service_id = id;
         const price = service.price;
+        const name = service.name;
         const status = 'panding';
         axios.post('http://localhost:5000/place-order', {
             email,
             service_id,
             price,
+            name,
             status
         })
             .then(result => {

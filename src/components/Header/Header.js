@@ -19,7 +19,7 @@ const Header = () => {
                         <Link to='/signin'><button className="btn-primary">Sign In</button></Link>
                         :
                         <>
-                            <NavLink to='/my-bookings'>My Bookings</NavLink>
+                            <NavLink to='/my-orders'>My Orders</NavLink>
                             <button onClick={logOut} className="btn-secondery">Logout</button>
                             <span className="user">{user.displayName}</span>
                         </>

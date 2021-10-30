@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import SignIn from './components/SignIn/SignIn';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import MyOrders from './components/MyOrders/MyOrders';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <PrivateRoute path='/service-details/:id'>
             <ServiceDetails />
+          </PrivateRoute>
+          <PrivateRoute path='/my-orders'>
+            <MyOrders />
           </PrivateRoute>
 
           {/* <Route path='/service-details/:id'>
