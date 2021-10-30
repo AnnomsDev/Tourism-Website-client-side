@@ -20,6 +20,7 @@ const Header = () => {
                         :
                         <>
                             <NavLink to='/my-orders'>My Orders</NavLink>
+                            <NavLink to='/manage-all-orders'>Manage All Orders</NavLink>
                             <button onClick={logOut} className="btn-secondery">Logout</button>
                             <span className="user">{user.displayName}</span>
                         </>

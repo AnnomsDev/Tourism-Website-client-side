@@ -6,6 +6,7 @@ import SignIn from './components/SignIn/SignIn';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import MyOrders from './components/MyOrders/MyOrders';
+import ManageAllOrders from './components/ManageAllOrders/ManageAllOrders';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           </PrivateRoute>
           <PrivateRoute path='/my-orders'>
             <MyOrders />
+          </PrivateRoute>
+          <PrivateRoute path='/manage-all-orders'>
+            <ManageAllOrders />
           </PrivateRoute>
 
           {/* <Route path='/service-details/:id'>

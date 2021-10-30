@@ -1,0 +1,31 @@
+.manage-all-orders{
+    background: #fff;
+    min-height: 80vh;
+    margin: 0 9vw;
+    padding: 10px;
+    /* border-radius: 8px; */
+    /* box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.116) ; */
+
+}
+.manage-all-orders h2 {
+    margin-bottom: 1em;
+}
+.manage-all-orders table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.manage-all-orders th,td{
+    padding: 2px 5px;
+}
+.manage-all-orders thead{
+    background-color: rgba(0, 0, 0, 0.082);
+    border-radius: 5px;
+}
+.manage-all-orders thead th{
+    text-align: left;
+    padding: 10px 5px;
+}
+.delete-btn{
+    color: red;
+    font-size: 29px;
+}
