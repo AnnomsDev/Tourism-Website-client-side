@@ -10,7 +10,7 @@ const Footer = () => {
 
             <div className='social-icons'>
                 <a href="http://facebook.com/annoms.rd" target="_blank" rel="noopener noreferrer"><BsFacebook /></a>
-                <a href="http://github.com/annomsDev" target="_blank" rel="noopener noreferrer"><BsGithub></BsGithub></a>
+                <a href="http://github.com/annomsDev" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
             </div>
 
             <p>© Copyright 2021 || All Copyright reserved</p>
