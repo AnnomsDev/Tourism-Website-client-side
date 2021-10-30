@@ -3,14 +3,22 @@ import { Redirect, Route } from 'react-router';
 import useFirebase from '../../Hooks/useFirebase';
 
 const PrivateRoute = ({ children, ...rest }) => {
-    const { user } = useFirebase()
+    const { user, isLoading } = useFirebase();
 
-    
+    if (isLoading) {
+        return (
+            <div >
+                <h3>Loading...</h3>
+            </div>
+        )
+    }
+
+
     return (
         <Route
             {...rest}
             render={({ location }) =>
-                user.uid ? (
+                user.displayName ? (
                     children
                 ) : (
                     <Redirect
@@ -23,10 +31,6 @@ const PrivateRoute = ({ children, ...rest }) => {
             }
         />
     );
-
-
 };
-
-
 
 export default PrivateRoute;

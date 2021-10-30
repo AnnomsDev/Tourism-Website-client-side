@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import SignIn from './components/SignIn/SignIn';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -17,9 +18,15 @@ function App() {
           <Route path="/signin">
             <SignIn />
           </Route>
-          <Route path='/service-details/:id'>
+          <PrivateRoute>
             <ServiceDetails />
-          </Route>
+          </PrivateRoute>
+
+          {/* <Route path='/service-details/:id'>
+            <ServiceDetails />
+          </Route> */}
+
+
         </Switch>
       </Router>
 
