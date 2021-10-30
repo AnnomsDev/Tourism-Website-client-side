@@ -12,6 +12,9 @@
 .service h2{
     color:  #455757;
 }
+.service p{
+    color:  #9c9c9c;
+}
 .service .book-container{
     display: flex;
     justify-content: space-between;

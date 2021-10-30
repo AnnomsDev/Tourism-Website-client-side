@@ -2,7 +2,7 @@ import './Service.css'
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Service = ({ name, img, price, serDe, _id }) => {
+const Service = ({ name, img, price, serDe: serDe, _id }) => {
 
     return (
         <div className='service'>

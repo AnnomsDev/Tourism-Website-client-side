@@ -1,0 +1,16 @@
+.footer{
+    padding: 2em 0;
+    text-align: center;
+    background: rgb(15, 15, 15);
+    color: rgb(221, 221, 221);
+}
+.footer p{
+    font-size: .9em;
+}
+.footer .social-icons *{
+    margin: 2px;
+    margin-top: 5px;
+    font-size: 21px;
+    color: rgb(41, 95, 211);
+
+}
