@@ -16,7 +16,7 @@ const ManageAllOrders = () => {
 
     // Delete btn handler
     const handleDeleteBth = id => {
-        const confirm = window.confirm('Do you want to delete this order')
+        const confirm = window.confirm('Do you want to delete this order?')
         if (confirm) {
             axios.get(`http://localhost:5000/delete/${id}`)
                 .then(res => {
