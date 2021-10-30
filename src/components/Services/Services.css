@@ -1,8 +1,18 @@
 .services{
-    margin: 3em 9vw;
+    margin: 4em 9vw;
+
+}
+.services h1{
+    font-size: calc(1em + 3vw);
+    margin-bottom: 0.5em;
+    font-weight: 700;
 }
 .services .containner{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1em;
+    grid-gap: 1.8em;
+}
+
+.heighlite{
+    color: #fc8422;
 }

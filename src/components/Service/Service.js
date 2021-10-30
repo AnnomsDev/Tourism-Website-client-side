@@ -7,10 +7,10 @@ const Service = ({ name, img, price, serDe, _id }) => {
     return (
         <div className='service'>
             <img src={img} width="100%" alt="" />
-            <h3>{name}</h3>
+            <h2>{name}</h2>
             <p>{serDe}</p>
             <div className="book-container">
-                <h3><span>$</span>{price}</h3>
+                <h2><span>$</span>{price}</h2>
                 <Link to={`/service-details/${_id}`}><button className="btn-secondery">Book</button></Link>
 
             </div>

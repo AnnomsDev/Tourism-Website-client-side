@@ -1,6 +1,25 @@
 .service{
-    padding: 1em;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.13);
+    position: relative;
+    padding-bottom: 4em;
+}
+.service img{
+    border-radius: 8px;
+}
+.service h2{
+    color:  #455757;
 }
 .service .book-container{
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 1em;
+    width: calc(100% - 20px);
+}
+.book-container h2 span{
+    color: #FF8A2C;
 }
