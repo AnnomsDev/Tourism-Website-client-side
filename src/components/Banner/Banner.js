@@ -5,7 +5,7 @@ const Banner = () => {
     return (
         <div className='banner'>
             <h1>live your <br /> <span>adventure</span> </h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus non ad, illum unde sapiente</p>
+            <p>Don't wait wait until tomorrow, discover your adventure and feel the sensation of closeness to nature around you</p>
             <button className="btn-primary">Get Started</button>
         </div>
     );

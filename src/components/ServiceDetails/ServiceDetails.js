@@ -43,16 +43,23 @@ const ServiceDetails = () => {
     }
 
 
-
-
-
-
     return (
-        <div>
-            {/* <img src={service.img} alt="" /> */}
-            <h2>{service.name}</h2>
-            <p>{service.des}</p>
-            <button onClick={handlePlaceOrder} className='btn-secondery' >Place order</button>
+        <div className='service-details'>
+            <div>
+                <img width='100%' src={service.img} alt="" />
+                <h2>{service.name}</h2>
+                <p>{service.des}</p>
+            </div>
+            <div className='details-container'>
+                <h2>Book your journey</h2>
+                <h3>What you will get</h3>
+                {
+                    service.serDe && service.serDe.split(',').map(fec => <p>{fec}</p>)
+                }
+                <h3>Price: ${service.price}</h3>
+
+                <button onClick={handlePlaceOrder} className='btn-secondery' >Place order</button>
+            </div>
         </div>
     );
 };

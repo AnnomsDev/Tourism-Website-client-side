@@ -23,10 +23,12 @@
     border-radius: 5px;
 }
 .btn-secondery{
+    color: #FF8A2C;
+    font-weight: 700;
     border: none;
     padding: .7em 1.7em;
-    border: 1px solid black;
+    border: 2px solid #FF8A2C;
     background: none;
     font-weight: 700;
-    border-radius: 5px;
+    border-radius: 7px;
 }
