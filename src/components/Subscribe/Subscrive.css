@@ -1,0 +1,43 @@
+.Subscribe{
+    margin: 1em;
+    padding: 5em 1em;
+    box-shadow: 0 0 10px 1px rgba(82, 82, 82, 0.164);
+    border-radius: 9px;
+}
+.Subscribe div{
+    margin-bottom: 1.7em;
+}
+.Subscribe h2{
+    font-weight: 700;
+}
+.Subscribe h2 span{
+    color: #ed553b;
+}
+.Subscribe form p{
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.Subscribe input{
+    padding: 4px 11px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    margin-bottom: 1em ;
+}
+
+
+
+/* for large device */
+@media only screen and (min-width:1024px){
+    .Subscribe{
+        display: grid;
+        padding: 2em 1.5em;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4em;
+        margin: 4em 9vw;
+        
+    }
+    .Subscribe input{
+        width: 50%;
+    }
+}

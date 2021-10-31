@@ -1,0 +1,36 @@
+.feedback{
+    margin: 9vw;
+    padding: 2em 1.5em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5em;
+    margin-bottom: 3em;
+}
+.feedback h1{
+    color: #435555;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.feedback h1 span{
+    color: #ed553b;
+}
+.feedback .left p{
+    color: #969898;
+    font-weight: 500;
+}
+.feedback-box{
+    border-radius: 7px;
+    box-shadow: 0 0 18px 1px rgba(0, 0, 0, .04);
+    padding: 1em;
+    background-color: white;
+}
+
+
+
+
+@media only screen and (max-width: 688px) {
+    .feedback{
+    grid-template-columns: 1fr;
+    padding: 0;
+    }
+}
