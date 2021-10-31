@@ -8,7 +8,7 @@ const ManageAllOrders = () => {
     const [orders, setOrders] = useState([])
 
     useEffect(() => {
-        axios.get('http://localhost:5000/all-orders')
+        axios.get('https://frightening-hollow-59703.herokuapp.com/all-orders')
             .then(res => setOrders(res.data))
             .catch(error => console.log('Got an error', error))
     }, [])
@@ -18,7 +18,7 @@ const ManageAllOrders = () => {
     const handleDeleteBth = id => {
         const confirm = window.confirm('Do you want to delete this order?')
         if (confirm) {
-            axios.delete(`http://localhost:5000/delete/${id}`)
+            axios.delete(`https://frightening-hollow-59703.herokuapp.com/delete/${id}`)
                 .then(res => {
                     if (res.data.deletedCount === 1) {
                         const remainning = orders.filter(order => order._id !== id)

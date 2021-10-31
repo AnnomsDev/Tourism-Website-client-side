@@ -12,7 +12,7 @@ const MyOrders = () => {
 
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/my-orders/${user.email}`)
+        axios.get(`https://frightening-hollow-59703.herokuapp.com/my-orders/${user.email}`)
             .then(res => setMyOrders(res.data))
             .catch(error => console.log('Got an error ', error))
 
@@ -22,7 +22,7 @@ const MyOrders = () => {
     const handleDeleteBth = id => {
         const confirm = window.confirm('Do you want to cancel this?')
         if (confirm) {
-            axios.delete(`http://localhost:5000/delete/${id}`)
+            axios.delete(`https://frightening-hollow-59703.herokuapp.com/delete/${id}`)
                 .then(res => {
                     if (res.data.deletedCount === 1) {
                         const remainning = myOrders.filter(order => order._id !== id)
@@ -37,7 +37,7 @@ const MyOrders = () => {
 
     // Handle confirm btn
     const handleConfirmBtn = id => {
-        axios.put('http://localhost:5000/change-status', { id: id })
+        axios.put('https://frightening-hollow-59703.herokuapp.com/change-status', { id: id })
             .then(res => {
                 if (res.data.modifiedCount === 1) {
                     const remainning = myOrders.filter(order => order._id !== id)
