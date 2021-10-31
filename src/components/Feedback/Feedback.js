@@ -9,7 +9,7 @@ const Feedback = () => {
                 <p>See and discover what adventurers tell us about their journey with us, we always listen to whatever experience they have to say </p>
                 <div className="feedback-box">
                     <p><i>" <strong>Adventrure-lovers</strong> really helped me in finding the best location for ny first outdoor trip."</i></p>
-                    <h3>Rayan Renold</h3>
+                    <h3>Jhon Philips</h3>
                     <p>Enterpreneur</p>
 
                 </div>

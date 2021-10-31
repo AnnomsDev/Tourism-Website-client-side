@@ -1,0 +1,16 @@
+.NotFound{
+    margin: 0 10vw;
+    min-height: 70vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.NotFound h2{
+    font-weight: 700;
+}
+@media only screen and (min-width:487px) {
+    .NotFound{
+        margin: 0 30vw;
+    }
+}
