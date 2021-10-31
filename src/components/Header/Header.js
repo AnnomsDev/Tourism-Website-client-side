@@ -36,12 +36,14 @@ const Header = () => {
                                     <li className="nav-item">
                                         <NavLink className="nav-link" to='/manage-all-orders'>Manage All Orders</NavLink>
                                     </li>
+                                    <li className="nav-item">
+                                        <NavLink className="nav-link" to='/add-service'>Add New Service</NavLink>
+                                    </li>
                                     <button onClick={logOut} className="al-btn-secondery">Logout</button>
                                     <li className='nav-item d-flex fw-bold  align-items-center ms-2'>
                                         <BiUserCircle /> {user.displayName}
                                     </li>
                                 </>
-
                         }
 
                     </ul>
