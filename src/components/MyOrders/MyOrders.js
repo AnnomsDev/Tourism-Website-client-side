@@ -1,6 +1,5 @@
 import './MyOrders.css'
-import React from 'react';
-import { useEffect, useState } from 'react/cjs/react.development';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import useFirebase from '../../Hooks/useFirebase';
 import { MdDeleteForever } from 'react-icons/md';
@@ -17,6 +16,7 @@ const MyOrders = () => {
             .catch(error => console.log('Got an error ', error))
 
     }, [user])
+
 
     // Delete btn handler
     const handleDeleteBth = id => {
