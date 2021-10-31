@@ -22,7 +22,7 @@ const MyOrders = () => {
     const handleDeleteBth = id => {
         const confirm = window.confirm('Do you want to cancel this?')
         if (confirm) {
-            axios.get(`http://localhost:5000/delete/${id}`)
+            axios.delete(`http://localhost:5000/delete/${id}`)
                 .then(res => {
                     if (res.data.deletedCount === 1) {
                         const remainning = myOrders.filter(order => order._id !== id)
