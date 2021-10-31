@@ -58,7 +58,7 @@ const ServiceDetails = () => {
                 }
                 <h3>Price: ${service.price}</h3>
 
-                <button onClick={handlePlaceOrder} className='btn-secondery' >Place order</button>
+                <button onClick={handlePlaceOrder} className='al-btn-secondery' >Place order</button>
             </div>
         </div>
     );

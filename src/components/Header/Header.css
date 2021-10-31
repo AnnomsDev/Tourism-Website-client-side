@@ -1,34 +1,48 @@
-.header{
-    display: flex;
-    align-items: center;
-    padding: 1em 9vw;
+   
+.Header{
+    background-color: #8c8e8f !important;
+    /* background-color: #fff !important;
+    background-color: #8c8e8f49 !important; */
+    padding: 10px 9vw;
 }
-.header .logo{
+.selected{
+    color: #ed553b;
+    font-weight: 700;
+
+}
+.Header a{
+    font-weight: 700 !important;
+    color: white !important;
+}
+.Header .logo{
+    font-weight: 700;
     margin-right: auto;
+    font-size: 2em;
 }
-.header a{
-    text-decoration: none;
-    font-weight: 500;
-    color: black;
+.Header .logo a{
+    font-size: 24px;
 }
-.header nav *{
-    margin-left: 1em;
+.Header .logo span{
+    color: #ed553b;
 }
-.btn-primary{
+.navbar-toggler-icon{
+    color: white !important;
+}
+.al-btn-primary{
     border: none;
     padding: .7em 1.7em;
     background: linear-gradient(90deg, #e06615,   #f5ac7c) ;
     color: white;
     font-weight: 700;
     border-radius: 5px;
-}
-.btn-secondery{
+  }
+  .al-btn-secondery{
     color: #FF8A2C;
     font-weight: 700;
     border: none;
-    padding: .7em 1.7em;
+    padding: .5em 1.7em;
     border: 2px solid #FF8A2C;
     background: none;
     font-weight: 700;
     border-radius: 7px;
-}
+  }

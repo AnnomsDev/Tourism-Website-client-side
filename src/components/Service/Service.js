@@ -11,7 +11,7 @@ const Service = ({ name, img, price, serDe: serDe, _id }) => {
             <p>{serDe}</p>
             <div className="book-container">
                 <h2><span>$</span>{price}</h2>
-                <Link to={`/service-details/${_id}`}><button className="btn-secondery">Book</button></Link>
+                <Link to={`/service-details/${_id}`}><button className="al-btn-secondery">Book</button></Link>
 
             </div>
 
