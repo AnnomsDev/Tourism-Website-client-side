@@ -7,7 +7,7 @@ const Services = () => {
     const [services, setServices] = useState([])
 
     useEffect(() => {
-        axios.get('https://frightening-hollow-59703.herokuapp.com/services')
+        axios.get('https://adventure-lovers.onrender.com/services')
             .then(services => {
                 setServices(services.data)
                 console.log(services.data) //test

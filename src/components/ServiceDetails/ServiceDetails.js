@@ -10,7 +10,7 @@ const ServiceDetails = () => {
     const { user } = useFirebase()
 
     useEffect(() => {
-        axios.get(`https://frightening-hollow-59703.herokuapp.com/services/${id}`)
+        axios.get(`https://adventure-lovers.onrender.com/services/${id}`)
             .then(res => setService(res.data))
     }, [])
 
@@ -20,7 +20,7 @@ const ServiceDetails = () => {
         const price = service.price;
         const name = service.name;
         const status = 'panding';
-        axios.post('https://frightening-hollow-59703.herokuapp.com/place-order', {
+        axios.post('https://adventure-lovers.onrender.com/place-order', {
             email,
             service_id,
             price,
